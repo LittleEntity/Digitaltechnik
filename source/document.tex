@@ -226,7 +226,9 @@ Im Allgemeinen kann die Wertigkeit einer ganzen Zahl $Z$ mit $n$ Vorkomma-, $m$ 
 
 Über die Zählfunktion \marginpar{Zählfunktion} \label{Zählfunktion} werden Arithmetische Operationen vereinfacht. Wird der Wertebereich einer Ziffer um eins überschritten wird die Ziffer auf $0$ gesetzt und ein Übertrag\footnote{engl. carry} auf die nächste Stelle übernommen. Bei Unterschreiten des Wertebereichs um eins erfolgt eine Anleihe\footnote{engl. borrow} auf die nächst höhere Stelle. Die Ausführung von arithmetischen Operationen lässt sich auf die Zählfunktion zurück führen. Die Berechnung für jede Stelle ist auf einen simplen Algorithmus zurückführbar und somit gut für eine automatische Ausführung geeignet.
 
- Eine weitere Besonderheit ist die Operation der Stellenverschiebung. \marginpar{Stellen-verschiebung} Eine Stellenverschiebung nach links in einem $B$-System bedeutet eine Division durch $B$ der Zahl. Dies kann bei ganzen Zahlen entweder durch streichen der niedrigsten Stelle geschehen oder bei gebrochenen Zahlen durch verschieben des Kommas nach links. Eine Stellenverschiebung nach rechts bedeutet eine Multiplikation mit $B$ der Zahl. Eine $k$-fache Verschiebung bedeutet eine Division bzw. Multiplikation um die $k$te Potenz der Basis. Beispiele:
+\section{Stellenverschiebung}
+\label{stellenverschiebung}
+Eine weitere Besonderheit ist die Operation der Stellenverschiebung. Eine Stellenverschiebung nach links in einem $B$-System bedeutet eine Division durch $B$ der Zahl. Dies kann bei ganzen Zahlen entweder durch streichen der niedrigsten Stelle geschehen oder bei gebrochenen Zahlen durch verschieben des Kommas nach links. Eine Stellenverschiebung nach rechts bedeutet eine Multiplikation mit $B$ der Zahl. Eine $k$-fache Verschiebung bedeutet eine Division bzw. Multiplikation um die $k$te Potenz der Basis. Beispiele:
 \begin{itemize}
 	\item
 	$1337_{10} \div 10^1 = 133_{10}$
@@ -478,6 +480,7 @@ Bei einer Zahl mit Vorperiode der Länge $k$ muss zuerst die Vorperiode durch Mu
 \end{enumerate}
 
 Mit der Formel $p = \frac{o}{B^n - 1}$ lassen sich auch manche Brüche in Stellenschreibweise umformen. Zum Beispiel kann $\frac{1}{3}$ auch anders geschrieben werden als $\frac{1}{2^2 - 1}$. Mit Hilfe der Formel kann die Periodenlänge $n = 2$, die Periode als Ganzzahl $o = 1$ und die neue Basis $B = 2$ bestimmt werden. Also ist $\frac{1}{3} \mapsto 0,\overline{01}_2$ .
+Ist eine Zahl mit Periode auf diese Weise bestimmt, lassen sich Vielfache zur Basis $B$ der Zahl ebenfalls bestimmen indem die Periodischen Stellen geschoben werden. Beispielsweise ist $ \frac{1}{6} \mapsto 0,0 \overline{01}_2 $ , da $\frac{1}{3} \mapsto 0, \overline{01} $ und $ \frac{1}{3} \cdot 2^{-1} = \frac{1}{6}$ ist. Die Multiplikation mit $2^{-1}$ kann durch eine Stellenverschiebung der Stellen einer Dualzahl um eine Stelle nach rechts vollzogen werden.\footnote{siehe Abschnitt \ref{stellenverschiebung} zum Thema Stellenverschiebung}  
 
 \section{Addition und Subtraktion im Dualsystem}
 Nach der Zählfunktion\footnote{Siehe Abschnitt \ref{Zählfunktion} unter Zählfunktion} gelten folgende Regeln:
