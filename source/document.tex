@@ -596,10 +596,10 @@ $-K_{10}(38)$ &              \textbf{-62} & $-K_2(100 0010)$  &               \t
 
 %TODO Abschnitt zu Multiplikation und Division von Dualzahlen ergänzen
 
-\chapter{Darstellung und Arithmetik rationaler Zahlen}
+\section{Darstellung und Arithmetik rationaler Zahlen}
 In der Praxis gibt es in digitalen automatischen Rechenanlagen zwei Darstellungsarten für rationale Zahlen: das Festkommaformat und das Fließkommaformat. Den folgenden zwei Abschnitten wird näher auf die einzelnen Formate eingegangen.
 
-\section{Festkommma-Arithmetik}
+\subsection{Festkommma-Arithmetik}
 Die Festkommadarstellung wird verwendet um Zahlen Z im Wertebereich $W_F = \{ Z~\in~\mathbb{Q} \mid -1 < Z < 1\}$ abzubilden. Das höchstwertige Bit wird als Vorzeichenbit \textit{VZ} verwendet und gibt das Vorzeichen der Zahl an. Die übrigen Bits werden als Mantissenbits verwendet. Die Mantisse gibt alle Nachkommastellen an. Die Vorkommastelle ist immer null und muss deshalb nicht codiert werden. Abbildung \ref{Festkommadarstellung} zeigt Schematisch die Festkommadarstellung.
 
 \begin{figure}[htbp] % positioning htbp: h = here; t = top; b bottom; p own page
@@ -625,7 +625,7 @@ Z_{min} &=& -0,111...1              \\
         &=& -1 + 2^{-(n-1)}
 \end{eqnarray*}
 
-\section{Fließkomma-Arithmetik}
+\subsection{Fließkomma-Arithmetik}
 Bei der Fließkommadarstellung wird zusätzlich ein Exponent zur Mantisse  gespeichert. Dem Exponenten wird ein konstanter Wert implizit hinzu addiert um auf ein Vorzeichenbit für den Exponenten verzichten zu können. Die so entstandene Zahl wird Charakteristik einer Fließkommazahl genannt. Abbildung \ref{Fliesskommadarstellung} zeigt schematisch die Fließkommadarstellung.
 \begin{figure}[htbp] % positioning htbp: h = here; t = top; b bottom; p own page
 	\centering
