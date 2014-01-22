@@ -690,16 +690,16 @@ Allgemeine Beschreibungsmerkmale für Codes sind:
 \item
 	Die \textbf{Redundanz}: ein Code ist redundant, wenn mögliche Kombinationen von Zeichen nicht als Codewörter genutzt werden.
 \item
-	Die \textbf{absolute Redundanz\footnote{Differenz zwischen Anzahl benötigten Bits für alle Kombinationen und Anzahl verwendeten Bits} $R_a$} ist eine Kenngröße eines Codes. Die absolute Redundanz wird über die Anzahl der Kombinationsmöglichkeiten $N$ und die Anzahl Codewörter $N_{cw}$ berechnet. Die Anzahl Kombinationsmöglichkeiten hängt von der Wortlänge $len_{cw}$ des Codes ab. Es gilt:
-	$$ N = 2^{len_{cw}} $$
-	$$ R_a = ld(N) - ld(N_{cw}) \textnormal{ [bit]} $$
+	Die \textbf{absolute Redundanz\footnote{Differenz zwischen Anzahl benötigten Bits für alle Kombinationen und Anzahl verwendeten Bits} $R_a$} ist eine Kenngröße eines Codes. Die absolute Redundanz wird über die Anzahl der Kombinationsmöglichkeiten $n_k$ und die Anzahl Codewörter $n_{cw}$ berechnet. Die Anzahl Kombinationsmöglichkeiten hängt von der Wortlänge $len_{cw}$ des Codes ab. Es gilt:
+	$$ n_k = 2^{len_{cw}} $$
+	$$ R_a = ld(n_k) - ld(n_{cw}) \textnormal{ [bit]} $$
 	Beispiel: Redundanz des BCD-Codes für die Ziffern 0 bis 9
-	$$ N = 2^4 $$
-	$$ N_{cw} = 10 $$
+	$$ n_k = 2^4 $$
+	$$ n_{cw} = 10 $$
 	$$ R_a = ld(2^4) - ld(10) \approx 4 - 3,32 = 0,68 Bit $$
 \item
-	Die \textbf{relative Redundanz\footnote{Verhältnis zwischen nicht benutzten bits zu insgesamt verwendeten bits} $R_r$} ist eine Kenngröße eines Codes. Die relative Redundanz wird über die Anzahl der Kombinationsmöglichkeiten $N$ und die absolute Redundanz berechnet. Es gilt:
-	$$ R_r = \frac{R_a}{ld(N)} $$
+	Die \textbf{relative Redundanz\footnote{Verhältnis zwischen nicht benutzten bits zu insgesamt verwendeten bits} $R_r$} ist eine Kenngröße eines Codes. Die relative Redundanz wird über die Anzahl der Kombinationsmöglichkeiten $n_k$ und die absolute Redundanz berechnet. Es gilt:
+	$$ R_r = \frac{R_a}{ld(n_k)} $$
 \item
 	Die \textbf{Vollständigkeit:} Ein Code wird vollständig genannt wenn die absolute Redundanz null ist. Ist die absolute Redundanz größer null, wird der Code als unvollständig bezeichnet.
 	$$ C \textnormal{ ist vollständig} \Leftrightarrow R_a = 0 $$
@@ -1035,7 +1035,6 @@ Für die Einfehlerkorrektur bei Blockcodes muss jedes Informationsbit durch mind
 	$P(i, p_a)$ ist korrekt. $P(i, p_b)$ ist falsch. Demnach ist $p_b$ falsch.
 \end{itemize}
 Diese Regel schließt nicht aus, dass ein Paritätsbit für mehrere Informationsbits zur Prüfung der Parität verwendet werden kann. Die Parität wird in diesem Fall nicht über zwei Bits gebildet, sondern über das jeweilige Paritätsbit inklusive der ihm zugeordneten Informationsbits. Damit eine eindeutige Fehlerlokalisierung möglich ist muss auf eine entsprechend günstige Verteilung der Informationsbits auf die Paritätsbits geachtet werden. Wenn über die Fallunterscheidung der Paritäten einem Fall genau ein Fehler zugeordnet werden kann, kann dieser Fehler entsprechend korrigiert werden.
-
 Ein Praktisches Schema zum Finden einer optimalen Verteilung wird im folgenden Abschnitt mit Hilfe eines Beispiels erläutert.
 
 Ein Code mit vier Informationsbits soll gesichert werden. Dazu sind drei
