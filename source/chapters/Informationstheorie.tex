@@ -315,15 +315,26 @@ Das Wahrscheinlichkeitsfeld kann auch als Verbundmatrix $V$ geschrieben werden:
 	     	P(a_1) P(b_1 \mid P(a_1)) & P(a_1) P(b_2 \mid P(a_1)) \\
 	     	P(a_2) P(b_1 \mid P(a_2)) & P(a_2) P(b_2 \mid P(a_2)) \\
 	     \end{array}
-	     \right) \\
+	     \right)
 \end{align*}
 
-Aus der Vernundmatrix lassen sich die Wahrscheinlichkeiten der Quellenzeichen über die Summe der Zeilen rückberechnen. Dies gilt, da die Ereignisse je Spalte alle dem Ereignis, dass ein bestimmtest Zeichen gesendet wurde, zuzuordnen sind. Ebenso gilt, dass die Wahrscheinlichkeiten für die empfangenen Zeichen sich über die Summe der jeweiligen Spalten ergeben.
+Aus der Verbundmatrix lassen sich die Wahrscheinlichkeiten der Quellenzeichen über die Summe der Zeilen rückberechnen. Dies gilt, da die Ereignisse je Spalte alle dem Ereignis, dass ein bestimmtest Zeichen gesendet wurde, zuzuordnen sind. Ebenso gilt, dass die Wahrscheinlichkeiten für die empfangenen Zeichen sich über die Summe der jeweiligen Spalten ergeben.
 
-Die Entropie einer Quelle ist maximal, wenn jedes Zeichen des Alphabetes gleich wahrscheinlich generiert werden. Für die Quelle wird die maximale Entropie $H(X) = 1$ angenommen. Also muss $P(a_1) = \frac{1}{2}$ und $P(a_2) = \frac{1}{2}$ gelten. Da die Störungen symmetrisch wirken muss auch $P(b_1) = \frac{1}{2}$ und $P(b_2) = \frac{1}{2}$ gelten. Damit ergibt sich für die Verbundmatrix:
-
+Die Entropie einer Quelle ist maximal, wenn jedes Zeichen des Alphabetes gleich wahrscheinlich generiert werden.
+Für die Quelle wird die maximale Entropie $H(X) = 1$ angenommen.
+Also muss $P(a_1) = \frac{1}{2}$ und $P(a_2) = \frac{1}{2}$ gelten.
+Da die Störungen symmetrisch wirken muss auch $P(b_1) = \frac{1}{2}$ und $P(b_2) = \frac{1}{2}$ gelten.
+Damit ergibt sich für die Verbundmatrix:
 $$
 V = 
+\left(
+\begin{array}{*{2}{c}}
+	P(a_1,b_1) & P(a_1,b_2) \\
+	\\
+	P(a_2,b_1) & P(a_2,b_2) \\
+\end{array}
+\right)
+=
 \left(
 \begin{array}{*{2}{c}}
  	\frac{1-P_f}{2} & \frac{P_f}{2} \\
@@ -332,6 +343,41 @@ V =
 \end{array}
 \right)
 $$
+
+Welches Zeichen mit welcher Wahrscheinlichkeit empfangen wird,
+kann über die Spaltensummen berechnet werden.
+Für dieses Beispiel gilt:
+\begin{align*}
+	P(b_1) &= P(a_1, b_1) + P(a_2, b_1) \\
+	           &= \frac{1-P_f}{2} + \frac{P_f}{2} \\
+	           &= \frac{1}{2}
+\end{align*}
+\begin{align*}
+	P(b_2) &= P(a_1, b_1) + P(a_2, b_1) \\
+	           &= \frac{P_f}{2} +\frac{1-P_f}{2} \\
+	           &= \frac{1}{2}
+\end{align*}
+
+Damit ist das Wahrscheinlichkeitsfeld der Senke $Y$ aus diesem Beispiel eindeutig bestimmt:
+$$
+	Y = 
+	\left(
+	\begin{array}{cc}
+		b_1    & b_2 \\
+		\frac{1}{2} & \frac{1}{2}
+	\end{array}
+	\right)
+$$
+
+Mit diesem Ergebnis lässt sich die Entropie der Senke $H(Y)$ als Konstante berechnen:
+\begin{align*}
+	H(Y) &= \sum_{i=1}^2 P(b_i) \cdot H(b_i) \\
+		&= \sum_{i=1}^2 P(b_i) \cdot ld \left( \frac{1}{P(b_i)} \right) \\ 
+		&= \sum_{i=1}^2 \frac{1}{2} \cdot ld \left( \frac{1}{\frac{1}{2}} \right) \\ 
+		&= \sum_{i=1}^2 \frac{1}{2} \cdot 1 \\
+		&= 1 \left[ \frac{bit}{Zeichen} \right]
+\end{align*}
+Das Ergebnis $H(Y) = 1$ ist in sofern nicht überraschend, da die Entropie der Quelle $H(X) = 1$ ist und wir eine symmetrische Störung angenommen haben.
 
 Die Verbundentropie $H(X,Y)$ ist in diesem Beispiel also:
 \begin{align*}
@@ -354,7 +400,7 @@ Die Verbundentropie $H(X,Y)$ ist in diesem Beispiel also:
 		+ P_f	\cdot (1 - ld(P_f))\\
 		   &= (1 - P_f) - (1 - P_f)ld(1-P_f) 
 		+ P_f - P_fld(P_f)\\
-		   &= 1 - (1 - P_f)ld(1-P_f) - P_fld(P_f)\\
+		   &= 1 - (1 - P_f)ld(1-P_f) - P_fld(P_f)
 \end{align*}
 
 Die Transinformation ergibt sich aus:
