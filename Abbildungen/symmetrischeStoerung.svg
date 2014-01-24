@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg8296"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="symmetrischeStoerung.svg">
+  <defs
+     id="defs8298">
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3800"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3803"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.35"
+     inkscape:cx="275.18519"
+     inkscape:cy="668.14815"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1916"
+     inkscape:window-height="1156"
+     inkscape:window-x="4"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata8301">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="129.12276"
+       y="199.36748"
+       id="text8304"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8306"
+         x="129.12276"
+         y="199.36748"
+         dy="0 5">a<tspan
+   style="font-size:30px"
+   id="tspan8322">1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="129.12276"
+       y="303.21933"
+       id="text8308"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8310"
+         x="129.12276"
+         y="303.21933"
+         dy="0 5">a<tspan
+   style="font-size:30px"
+   id="tspan8320">2</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="397.37567"
+       y="205.36748"
+       id="text8312"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8314"
+         x="397.37567"
+         y="205.36748"
+         dy="0 5">b<tspan
+   style="font-size:30px"
+   id="tspan8324">1</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="397.37567"
+       y="303.21933"
+       id="text8316"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8318"
+         x="397.37567"
+         y="303.21933">b<tspan
+   style="font-size:30px"
+   id="tspan8326"
+   dy="5">2</tspan></tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 166.14815,191.177 228.14815,0"
+       id="path8328"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:none;marker-end:url(#Arrow1Lend)"
+       d="M 166.14815,287.32515 394.2963,199.177"
+       id="path8334"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path8336"
+       d="M 394.2963,287.32515 166.14815,199.177"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:1;marker-end:none;marker-mid:none;marker-start:url(#Arrow1Lstart)"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path8338"
+       d="m 166.14815,295.32515 228.14815,0"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       sodipodi:nodetypes="cc" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text10866"
+       y="179.90904"
+       x="193.79689"
+       style="font-size:26.16436195px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       xml:space="preserve"><tspan
+         dy="0 0 0 3.2705452"
+         y="179.90904"
+         x="193.79689"
+         id="tspan10868"
+         sodipodi:role="line">P(b<tspan
+   id="tspan10870"
+   style="font-size:19.62327194px"
+   dy="3.2705452 -6.5410905 0 3.2705452 -3.2705452">1<tspan
+   style="font-size:26.16436195px"
+   id="tspan10872"
+   dy="-3.2705452">|a</tspan>1<tspan
+   style="font-size:26.16436195px"
+   id="tspan10876">) = 1 - P</tspan><tspan
+   id="tspan10884"
+   style="font-size:19px"
+   dy="5">f</tspan></tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:26.16436195px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="193.79689"
+       y="319.90906"
+       id="text10886"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10888"
+         x="193.79689"
+         y="319.90906"
+         dy="0 0">P(b<tspan
+   dy="5 -6.5410905 0 5"
+   style="font-size:19.62327194px"
+   id="tspan10890">2<tspan
+   dy="-3.2705452"
+   id="tspan10892"
+   style="font-size:26.16436195px">|a</tspan>2<tspan
+   id="tspan10894"
+   style="font-size:26.16436195px"
+   dy="-6">)= 1 - P</tspan><tspan
+   dy="5"
+   style="font-size:19px"
+   id="tspan10896">f</tspan></tspan></tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text10898"
+       y="227.36974"
+       x="366.84213"
+       style="font-size:16.74626923px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       xml:space="preserve"><tspan
+         dy="0 0"
+         y="227.36974"
+         x="366.84213"
+         id="tspan10900"
+         sodipodi:role="line">P(b<tspan
+   id="tspan10902"
+   style="font-size:12.55970097px"
+   dy="3.2002056 -4.1865673 0">2<tspan
+   style="font-size:16.74626923px"
+   id="tspan10904"
+   dy="-2.0932837 0 0 -7.040247">|a<tspan
+   style="font-size:12.5px"
+   id="tspan10924"
+   dy="3.2">1</tspan>) = P</tspan><tspan
+   id="tspan10908"
+   style="font-size:12.16078091px"
+   dy="3.2002056">f</tspan></tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.74626923px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="366.84213"
+       y="267.88605"
+       id="text10910"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10912"
+         x="366.84213"
+         y="267.88605"
+         dy="0 0">P(b<tspan
+   dy="3.2002056 -4.1865673 0"
+   style="font-size:12.55970097px"
+   id="tspan10914">2<tspan
+   dy="-2.0932837 0 0 -4 0 0.75999999"
+   id="tspan10916"
+   style="font-size:16.74626923px">|a<tspan
+   style="font-size:12.5px"
+   id="tspan10922"
+   dy="3.2">2</tspan>) = P</tspan><tspan
+   style="font-size:12.16078091px"
+   id="tspan10920"
+   dy="3.2002056">f</tspan></tspan></tspan></text>
+  </g>
+</svg>
