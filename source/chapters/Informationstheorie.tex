@@ -1,10 +1,10 @@
 \chapter{Informationstheorie}
 %TODO: Informationen zum Thema Informationstheorie aus ausführlichem Skript dgt_all einarbeiten
-In der Informationstheorie geht es um die Definition und quantitative Bewertung von Information. Im Folgenden geht es um den Austausch von Informationen mittels Nachrichten über Kanäle. Ein Kommunikationssystem wird durch die Kommunikationspartner, der Kommunikationsrichtung und der Informationsart charakterisiert. Als Kommunikationsparter können Menschen und Maschinen auftreten.     Die Kommunikationsrichtung wird allgemein mit simplex oder duplex beschrieben. Ist ein Kommunikationskanal simplex aufgebaut, so erfolgt das Senden der Nachrichten immer vom selben Kommunikationsteilnehmer. Als duplex werden Kommunikationskanäle bezeichnet über die beide Kommunikationspartner gleichzeitig einander Nachrichten senden und empfangen. Zusätzlich gibt es die Bezeichnung halb-duplex, damit ist gemeint, dass nicht gleichzeitig gesendet und empfangen werden kann, sondern die beiden Kommunikationspartner sich mit senden und empfangen von Nachrichten abwechseln. Die Art der Information kann beispielsweise in Daten oder Befehle klassifiziert werden.
+In der Informationstheorie geht es um die Definition und quantitative Bewertung von Information. Im Folgenden wird der Austausch von Informationen mittels Nachrichten über Kanäle besprochen. Ein Kommunikationssystem wird durch die Kommunikationspartner, der Kommunikationsrichtung und der Informationsart charakterisiert. Als Kommunikationsparter können Menschen und Maschinen auftreten. Die Kommunikationsrichtung wird allgemein mit simplex oder duplex beschrieben. Ist ein Kommunikationskanal simplex aufgebaut, so erfolgt das Senden der Nachrichten immer vom selben Kommunikationsteilnehmer. Als duplex werden Kommunikationskanäle bezeichnet über die beide Kommunikationspartner gleichzeitig einander Nachrichten senden und empfangen. Zusätzlich gibt es die Bezeichnung halb-duplex, damit ist gemeint, dass nicht gleichzeitig gesendet und empfangen werden kann, sondern die beiden Kommunikationspartner sich mit senden und empfangen von Nachrichten abwechseln. Die Art der Information kann beispielsweise in Daten oder Befehle klassifiziert werden.
 
 Die Information einer Nachricht ist nur dann von Bedeutung, wenn der Empfänger daraus etwas ihm bislang unbekanntes erfährt. Im Fall von Befehlen kann dies zusätzlich zu einer Änderung von Verhaltensweisen führen. Bei der Analyse von Nachrichten wird in drei Betrachtungsweisen unterschieden:
 \begin{itemize}
-  \item \textbf{Syntax} ist die äußere Form in Form von Zeichen und grammatikalischer Regeln der Sprache in der die Nachricht verfasst ist. Hierbei kann die mathematische Formulierung und quantitative Bewertung untersucht werden.
+  \item \textbf{Syntax} ist die äußere Form in Form von Zeichen und grammatikalischer Regeln der Sprache, in der die Nachricht verfasst ist. Hierbei kann die mathematische Formulierung und quantitative Bewertung untersucht werden.
   \item \textbf{Semantik} ist die Bedeutung und Sinn der Nachricht.
   \item \textbf{Pragmatik} ist die Untersuchung der Auswirkung der Information auf das Verhalten des Empfängers.
 \end{itemize}
@@ -31,10 +31,14 @@ $$
 	\sum_{i=1}^n P(a_i) = 1
 $$
 
-Eine \textit{stationäre Quelle} charakterisiert eine Quelle als zeitunabhängig. Das heißt über alle Zeitpunkte hinweg ist die Zeichenwahrscheinlichkeit eines jeden Zeichens konstant.
-
-Quellen ohne Gedächtnis werden als unabhängige Quellen bezeichnet. Dabei gilt, dass die Wahrscheinlichkeit eines Zeichens unabhängig von jedem anderen Zeichen zu betrachten ist. Für die Wahrscheinlichkeit, dass ein Zeichen $a_j$ auf das Zeichen $a_i$ folgt gilt dabei:
+Die Eigenschaften von Quellen können folgendermaßen beschrieben werden:
+\begin{itemize}
+  \item Eine \textit{stationäre Quelle} charakterisiert eine Quelle als zeitunabhängig. Das heißt über alle Zeitpunkte hinweg ist die Zeichenwahrscheinlichkeit eines jeden Zeichens konstant.
+	\item Quellen ohne Gedächtnis werden als \emph{unabhängige Quellen} bezeichnet. Dabei gilt, dass die Wahrscheinlichkeit eines Zeichens unabhängig von jedem anderen Zeichen zu betrachten ist. Für die Wahrscheinlichkeit, dass ein Zeichen $a_j$ auf das Zeichen $a_i$ folgt gilt dabei:
 $$ P(a_i, a_j) = P(a_i) \cdot P(a_j) $$
+\end{itemize}
+Eine stationäre unabhängige Quelle ist also eine Quelle, die zeichenunabhängig und zeitunabhängig Zeichen sendet.
+
 
 \subsection{Entscheidbarkeit und Entropie von Quellen}
 Die absolute Entscheidbarkeit einer Quelle ist abzulesen an der Anzahl Entscheidungsfragen\footnote{wikipedia: "`Die Entscheidungsfrage (auch: Ja/nein-Frage, Satzfrage) ist ein Typ von Fragesatz. Entscheidungsfragen sind die Fragen, auf die man nur mit ja oder mit nein antworten kann."'}, die gestellt werden müssen um ein gesendetes Zeichen zu erfragen. Für die absolute Entscheidbarkeit $H_0(X)$ von einer Quelle $X$, deren Alphabet $n$ unterschiedlichen Zeichen hat, gilt:
@@ -66,11 +70,13 @@ So ergibt sich für eine Quelle $G$ mit gleichwahrscheinlichen Zeichen, dass die
 	H(G) &= ld(n) = H_0(G) \left[ \frac{bit}{Zeichen} \right]\\
 \end{align*}
 
-Wenn eine Quelle Zeichen mit unterschiedlicher Wahrscheinlichkeit erzeugt lässt sich im Bezug auf die Entropie und die absolute Entscheidbarkeit eine Redundanz feststellen. Die absolute Redundanz $R$ wird berechnet mit:
+Wenn eine Quelle Zeichen mit unterschiedlicher Wahrscheinlichkeit erzeugt,
+lässt sich im Bezug auf die Entropie und die absolute Entscheidbarkeit eine Redundanz feststellen.
+Die absolute Redundanz $R$ wird berechnet mit:
 $$
 	R = H_0 - H \left[ \frac{bit}{Zeichen} \right]
 $$
-Die relatve Redundanz $r$ wird ergibt sich aus:
+Die relatve Redundanz $r$ ergibt sich aus:
 $$
 	r = \frac{R}{H_0} = \frac{H_0 - H}{H_0}
 $$
