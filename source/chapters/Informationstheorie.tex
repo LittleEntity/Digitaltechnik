@@ -268,7 +268,18 @@ Das die unterschiedlichen Ereignisse im Diagramm dargestellt zeigt Abbildung \re
 	\caption{Wahrscheinlichkeiten bei der Übertragung der Zeichen}
 	\label{symStoerung}
 \end{figure}
-Im folgenden wird das Wahrscheinlichkeitsfeld der Verbundquelle erstellt, also der Quelle in der wir Infermationserzeuger und -Empfänger gemeinsam betrachten. Jede Wahrscheinlichkeit eines Ereignisses berechnet sich aus der Wahrscheinlichkeit, dass die Quelle ein bestimmtes Zeichen sendet und der Wahrscheinlichkeit, dass dieses Zeichen als solches empfangen oder verfälscht wird. Für das Zeichen $a_1$ werden so die Wahrscheinlichkeiten der beiden Ereignisse berechnet, dass entweder das Zeichen $b_1$ oder das Zeichen $b_2$ empfangen wird. Es gibt also folgende vier Ereignisse:
+Diese stochastischen Ereignisse lassen sich in der Übertragungsmatrix\footnote{Die Übertragungsmatrix wird auch Rauschmatrix genannt.} $Ü$ zusamenfassen. Für das Beispiel gilt:
+$$ 
+	Ü = [ P(Y \mid X) ] =
+	\left(
+	\begin{array}{cc}
+		P(b_1 \mid a_1)    & P(b_1 \mid a_2) \\
+		P(b_2 \mid a_1) & P(b_2 \mid a_2)
+	\end{array}
+	\right)
+$$
+
+Im Folgenden wird das Wahrscheinlichkeitsfeld der Verbundquelle erstellt, also der Quelle in der wir Infermationserzeuger und -Empfänger gemeinsam betrachten. Jede Wahrscheinlichkeit eines Ereignisses berechnet sich aus der Wahrscheinlichkeit, dass die Quelle ein bestimmtes Zeichen sendet und der Wahrscheinlichkeit, dass dieses Zeichen als solches empfangen oder verfälscht wird. Für das Zeichen $a_1$ werden so die Wahrscheinlichkeiten der beiden Ereignisse berechnet, dass entweder das Zeichen $b_1$ oder das Zeichen $b_2$ empfangen wird. Es gibt also folgende vier Ereignisse:
 \begin{center}
 	\begin{tabular}{cc}
 		$a_1$ wird gesendet und $b_1$ empfangen & $P(a_1) \cdot P(b_1 \mid P(a_1))$ \\
