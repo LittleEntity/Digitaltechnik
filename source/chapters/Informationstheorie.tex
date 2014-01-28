@@ -41,7 +41,7 @@ Eine stationäre unabhängige Quelle ist also eine Quelle, die zeichenunabhängi
 
 
 \subsection{Entscheidbarkeit und Entropie von Quellen}
-Die absolute Entscheidbarkeit einer Quelle ist abzulesen an der Anzahl Entscheidungsfragen\footnote{wikipedia: "`Die Entscheidungsfrage (auch: Ja/nein-Frage, Satzfrage) ist ein Typ von Fragesatz. Entscheidungsfragen sind die Fragen, auf die man nur mit ja oder mit nein antworten kann."'}, die gestellt werden müssen um ein gesendetes Zeichen zu erfragen. Für die absolute Entscheidbarkeit $H_0(X)$ von einer Quelle $X$, deren Alphabet $n$ unterschiedlichen Zeichen hat, gilt:
+Die absolute Entscheidbarkeit einer Quelle ist abzulesen an der Anzahl Entscheidungsfragen\footnote{wikipedia: "`Die Entscheidungsfrage (auch: Ja/nein-Frage, Satzfrage) ist ein Typ von Fragesatz. Entscheidungsfragen sind die Fragen, auf die man nur mit ja oder mit nein antworten kann."'}, die gestellt werden müssen um ein gesendetes Zeichen zu erfragen. Für die absolute Entscheidbarkeit $H_0(X)$ von einer Quelle $X$, deren Alphabet $n$ viele unterschiedliche Zeichen hat, gilt:
 %TODO Beispiel zum Erfragen eines Zeichens einfügen
 $$ H_0(X) = ld(n) $$
 
@@ -500,10 +500,13 @@ Dieselbe Konstruktionsmethode aufgeschrieben in einer Tabelle:
 Konstruktionsmethode:
 \begin{enumerate}
   \item Sortiere abfallend die zu codierenden Zeichen nach deren Wahrscheinlichkeiten.
-  \item Das Zeichen mit der niedrigsten Wahrscheinlichkeit erhält als erste Stelle eine 1. Das Zeichen mit der zweitniedrigsten Wahrscheinlichkeit erhält als erste Stelle eine 0. Die Stellen werden bei diesem Verfahren von rechts nach links angehängt.
+  \item Das Zeichen mit der niedrigsten Wahrscheinlichkeit erhält als erste Stelle eine 0. Das Zeichen mit der zweitniedrigsten Wahrscheinlichkeit erhält als erste Stelle eine 1. Die Stellen werden bei diesem Verfahren von rechts nach links angehängt.
   \item Fasse das Zeichen mit der niedrigsten Wahrscheinlichkeit und das Zeichen mit der zweitniedrigsten Wahrscheinlichkeit in einer Gruppe zusammen.
   \item Ordne der Gruppe die Summe der Wahrscheinlichkeiten der Zeichen zu, die der Gruppe angehören.
-  \item Gruppen mit ihren zugeordneten Wahrscheinlichkeiten sind wie Zeichen zu behandeln. Gruppen können ebenso, wie Zeichen, zu größeren Gruppen zusammengefasst werden. Zusammengefassten Gruppen wird ebenso die Summe der Wahrscheinlichkeiten der kleineren Gruppen, aus denen sie bestehen, zugeordnet. Wiederhole alle Schritte bis eine einzige große Gruppe übrig ist.
+  \item Gruppen mit ihren zugeordneten Wahrscheinlichkeiten sind wie Zeichen zu behandeln.
+	Gruppen können ebenso, wie Zeichen, zu größeren Gruppen zusammengefasst werden. 
+	Zusammengefassten Gruppen wird ebenso die Summe der Wahrscheinlichkeiten der kleineren Gruppen zugeordnet, aus denen sie bestehen.
+	Wiederhole alle Schritte bis eine einzige große Gruppe übrig ist.
 \end{enumerate}
 
 Beispiel: 
@@ -570,6 +573,11 @@ $$
 \end{itemize}
 
 Da bei diesem Verfahren kein Codewort erzeugt wird, das im Präfix eines anderen Codewortes enthalten ist, kann beim einlesen einer Zeichenkette eindeutig direkt entschieden werden um welches Zeichen es sich jeweils handelt.
+
+\subsection{Mittlere Codewortlänge von Optimalcodes}
+Die mittlere Codewortlänge von Optimalcodes wird sinnvoll über das Mittel der Codewortlängen in Abhängigkeit der Häufigkeit des jeweiligen Codewortes ermittelt. Die mittlere Codewortlänge $len_{mid}$ eines Codes mit den Codewörtern $cw$ aus der Menge $C$ aller Codeworter ist:
+$$ len_{mid} = \sum_{cw \in C} P(cw) \cdot len(cw) $$
+
 %\begin{center}
 %\begin{tabular}[t]{lccc}
 %$a_i \mapsto code$ & Gruppe & $P$  & Zuordnung \\
